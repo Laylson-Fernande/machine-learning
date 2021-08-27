@@ -1,6 +1,6 @@
 package neural.network;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Matrix {
@@ -116,7 +116,7 @@ public class Matrix {
 	}
 
 	public List<Double> toArray() {
-		List<Double> result = new ArrayList<Double>();
+		List<Double> result = new LinkedList<Double>();
 		for (int i = 0; i < rows; i++) {
 			for (int j = 0; j < cols; j++) {
 				result.add(data[i][j]);

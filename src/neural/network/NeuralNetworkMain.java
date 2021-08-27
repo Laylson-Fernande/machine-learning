@@ -7,7 +7,7 @@ public class NeuralNetworkMain {
 		double[][] x = {{0,1,},{1,0},{0,0}};
 		double[][] y = {{1,0},{0,1},{1,0}};
 
-		NeuralNetwork network = new NeuralNetwork(2, 10, 2,0.05);
+		NeuralNetwork network = new NeuralNetwork(2, 10, 2,0.01);
 		network.fit(x, y, 100000);
 		
 		List<Double> output;
